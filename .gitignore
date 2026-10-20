@@ -1,0 +1,31 @@
+/node_modules
+.gitignore
+*.js
+
+# Track the ignore rules even though the original file ignored itself.
+!.gitignore
+
+# Archive preparation: secrets and generated output
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*service*account*.json
+*firebase-adminsdk*.json
+credentials*.json
+secrets.*
+.npmrc
+.netrc
+node_modules/
+build/
+dist/
+out/
+coverage/
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

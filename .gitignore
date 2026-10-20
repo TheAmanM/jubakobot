@@ -5,6 +5,10 @@
 # Track the ignore rules even though the original file ignored itself.
 !.gitignore
 
+# Handwritten JavaScript without a corresponding TypeScript source file.
+!/deploy_commands.js
+!/test.js
+
 # Archive preparation: secrets and generated output
 .env
 .env.*
@@ -29,3 +33,10 @@ coverage/
 *.tsbuildinfo
 .DS_Store
 Thumbs.db
+
+# Local credentials and authentication/debug logs.
+secret.json
+secrets.json
+*.credentials.json
+.pypirc
+.netrc
